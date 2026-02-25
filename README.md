@@ -30,18 +30,8 @@ Tools Used
 
 How to Run
 
-    Ensure you have root privileges.
+    # Make the script executable
+    chmod +x win-forensics-analyzer.sh
 
-    Clone this repository or download the .sh file.
-
-    Make the script executable:
-    Bash
-
-    chmod +x TMagen773637.s14.nx212.sh
-
-    Run the script:
-    Bash
-
-    sudo ./TMagen773637.s14.nx212.sh
-
-    Provide the full path to the forensic image file when prompted.
+    # Run the analyzer as root
+    sudo ./win-forensics-analyzer.sh
