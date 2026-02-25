@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Student name:Liat Dalgo
-# Student Code:s14
-# Class Code:TMagen773637
-# Lecturer's Name: Analyzer
-# Program: NX212
-
 #Colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'
