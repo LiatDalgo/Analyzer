@@ -1,26 +1,19 @@
-Windows Forensics: Project ANALYZER (NX212)
-Overview
+📖 Overview
 
-Computer investigations rely on the ability to extract information efficiently. This project is an automated forensics tool designed to extract and analyze data from Windows memory dumps and HDD images. By using automation, this script reduces human error and speeds up the extraction of critical evidence during the triage phase.
-Key Features
+Computer investigations rely on the ability to extract information efficiently. This project is an automated forensics tool designed to extract and analyze data from Windows memory dumps and HDD images. By using automation, this script reduces human error and speeds up the extraction of critical evidence.
+⚙️ Analysis Workflow
 
-    Automated Environment Setup: Automatically identifies and installs missing forensic tools (Foremost, Binwalk, Bulk Extractor, Volatility).
+    Validation: The script ensures root privileges and verifies the target image path.
 
-    Advanced Data Carving: Orchestrates multiple engines to recover deleted files and hidden data structures from HDD images.
+    Environment Prep: Automated check and installation of forensics dependencies.
 
-    Memory Forensics: Leverages the Volatility Framework to analyze RAM dumps, extracting:
+    Data Extraction: Execution of carving engines (Foremost, Binwalk, Bulk Extractor) to recover files.
 
-        Active processes and network connections.
+    Memory Triage: Deep memory profile identification followed by process and network analysis using Volatility.
 
-        Registry hives and console history.
+    Packaging: Final report generation and secure compression of all artifacts into a ZIP file.
 
-    Network Intelligence: Automatically detects and reports the presence, size, and location of network traffic (PCAP files).
-
-    Sensitive Info Extraction: Scans for human-readable patterns such as passwords, usernames, and executable files.
-
-    Final Reporting: Generates a statistical summary, a detailed analysis report, and packages all findings into a secure ZIP file.
-
-Tools Used
+🛠️ Tools Used
 
     Languages: Bash Scripting (Automation).
 
@@ -28,7 +21,7 @@ Tools Used
 
     Platform: Linux-based forensics environment (Kali/Ubuntu).
 
-How to Run
+🚀 How to Run
 
     # Make the script executable
     chmod +x win-forensics-analyzer.sh
